@@ -11,3 +11,102 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.font-weight-bold {
+    font-weight: 600;
+}
+
+.bg-bmi {
+    background-color: rgb(94, 10, 7) !important;
+}
+
+.bg-match-bmi {
+  background-color: #ffcce6 !important;
+}
+.bmi-background {
+  background: linear-gradient(to top, rgba(0,0,0,0.3), rgba(94, 10, 7, 1)), url('assets/DSC_8229.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.text-bmi-match {
+  color: #ffcce6 !important;
+}
+
+.text-bmi {
+  color: rgb(94, 10, 7) !important;
+}
+
+.btn-bmi {
+    color: #fff !important;
+    background-color: rgb(125, 10, 9);
+    border-color: rgb(125, 10, 7);
+}
+
+.btn-bmi-match {
+  color: rgb(94, 10, 7) !important;
+  background-color: #ffcce6 !important;
+  border-color: #ffcce6 !important;;
+}
+
+.btn-gavel:hover {
+    color: #fff;
+    background-color: rgb(125, 10, 9);
+    border-color: rgb(125, 10, 7);;
+}
+
+.btn-outline-gavel {
+    color: rgb(125, 10, 7);
+    border-color: #fff;
+}
+.btn-outline-gavel:hover {
+    color: #fff !important;
+    background-color: rgb(125, 10, 9);
+    border-color: rgb(125, 10, 7);
+}
+
+.fill-screen {
+    height: 85vh;
+}
+.share-sheet .mat-bottom-sheet-container{
+  background-color: #ffcce6 !important;
+  color: rgb(94, 10, 7) !important;
+  z-index: 99;
+}
+mat-dialog-container{
+  background-color: #ffcce6 !important;
+  color: rgb(94, 10, 7) !important;
+}
+::-webkit-scrollbar {
+  width: 10px
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(94, 10, 7);
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffcce6 !important;
+  border-radius: 15px;
+}
+.bg-recent-sermons{
+  background-color: #ffcce6;
+}
+.bg-about-us{
+  background-color: #ffcce6;
+}
+.fs-1 {
+  font-size: xx-large;
+}
+.line-height-sm {
+  line-height: 7px;
+}
+/* ::-webkit-media-controls-enclosure {
+  border-radius: 0px;
+} */
+.fs-3{
+  font-size: x-large;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
