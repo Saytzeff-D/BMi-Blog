@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { setBlogTray } from '../actions';
 
 const Navbar = () => {
+  const dispatch = useDispatch()
+    const url = useSelector(state=>state.UrlReducer.api)
+  useEffect(()=>{
+    axios.get(`${url}writeup`).then((res)=>{
+        if(res.data.status){
+            console.log(res.data.resp)
+            dispatch(setBlogTray(res.data.resp))
+        }
+    })
+}, [dispatch])
   return (
     <div className="mb-5 pb-5">
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top bg-bmi navbar-height bmi-opacity-lg">
@@ -13,7 +26,7 @@ const Navbar = () => {
               alt="Basileia Ministries Int'l"
               width="30px"
             />
-            <Link className="pl-3 text-white" to="/https://bm-i-frontend.vercel.app" style={{cursor: 'pointer'}}>BMi</Link> / <Link className='text-white' to="/" style={{cursor: 'default'}}>Blog</Link>
+            <a className="pl-3 text-white" href="https://bm-i-frontend.vercel.app"  style={{cursor: 'pointer'}}>BMi</a> / <Link className='text-white' to="/" style={{cursor: 'default'}}>Blog</Link>
           </span>
           <div className="collapse navbar-collapse justify-content-end bmi-collapse-opacity" id="bmiNavBar">
           <ul className="navbar-nav">
