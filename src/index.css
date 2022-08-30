@@ -27,6 +27,7 @@ code {
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  z-index: -999;
 }
 
 .text-bmi-match {

@@ -11,7 +11,7 @@ const Blog = () => {
             <div className='row' >
             {
                 blogTray.map((each, i)=>(
-                        <div className='col-lg-6 mx-auto' key={i}>
+                        <div className='col-lg-6 mx-auto' key={i} style={{zIndex: 1}}>
                             <div className='container bg-bmi shadow-lg rounded-lg py-2 my-4 text-bmi-match' >
                                 <div className='d-flex justify-content-between'>
                                     <p className='font-weight-bold text-white'>Time</p>

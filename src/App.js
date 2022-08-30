@@ -11,6 +11,12 @@ export default function App() {
   return (
     <div>
       <Navbar />
+      <div class="social-buttons position-fixed">
+        <a href="#"><i class="shadow-lg text-bmi fa fa-whatsapp"></i></a>
+        <a href="#"><i class="shadow-lg text-bmi fa fa-facebook-f"></i></a>
+        <a href="#"><i class="shadow-lg text-bmi fa fa-twitter"></i></a>
+        <a href="#"><i class="shadow-lg text-bmi fa fa-instagram"></i></a>
+      </div>
       <Header />
       <Routes>
         <Route path="/" element={<Blog /> } />
