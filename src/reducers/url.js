@@ -1,5 +1,5 @@
 const initState = {
-    api: 'https://bmi-server.herokuapp.com/api/'
+    api: 'https://bmi-backend.onrender.com/api/'
 }
 
 const UrlReducer = (state = initState, action)=>{
