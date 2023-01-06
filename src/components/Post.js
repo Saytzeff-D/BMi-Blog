@@ -21,7 +21,7 @@ const Post = () => {
                             <img src={require('../assets/bmi_logo.png')} alt="Basileia Ministries Int'l" width="50px"/>
                         </div>
                             <h1>{post.title}</h1>
-                            <p className='mb-5 py-3'>{post.content}</p>
+                            <pre className='mb-5 py-3'>{post.content}</pre>
                     </div>
                 </div>
             </div>

@@ -10,8 +10,17 @@ const Navbar = () => {
   useEffect(()=>{
     axios.get(`${url}writeup`).then((res)=>{
         if(res.data.status){
-            console.log(res.data.resp)
-            dispatch(setBlogTray(res.data.resp))
+            // console.log(res.data.resp)
+            let tray;
+            for (let writeup of res.resp) {
+            let str = JSON.parse(writeup.content);
+            writeup.content = str
+              .map((val) => String.fromCharCode(val))
+              .join('');
+            tray.push(writeup);
+        }
+            dispatch(setBlogTray(tray))
+            // dispatch(setBlogTray(res.data.resp))
         }
     })
 }, [dispatch])
