@@ -11,8 +11,8 @@ const Navbar = () => {
     axios.get(`${url}writeup`).then((res)=>{
         if(res.data.status){
             // console.log(res.data.resp)
-            let tray;
-            for (let writeup of res.resp) {
+            let tray = [];
+            for (let writeup of res.data.resp) {
             let str = JSON.parse(writeup.content);
             writeup.content = str
               .map((val) => String.fromCharCode(val))
